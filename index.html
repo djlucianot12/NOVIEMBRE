@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,7 +20,7 @@
     <meta name="author" content="LT STUDIO DESIGN">
     <meta name="copyright" content="LT STUDIO DESIGN">
     <meta name="description" content="We will continue to provide architectural spaces that embody beauty and pleasure in serene settings, touching the sentiments of those who use them.">
-    <meta name="keywords" content="LT STUDIO DESIGN,今井敦,Atsushi Imai,建築,プロデュース">
+    <meta name="keywords" content="LT STUDIO DESIGN,ä»Šäº•æ•¦,Atsushi Imai,å»ºç¯‰,ãƒ—ãƒ­ãƒ‡ãƒ¥ãƒ¼ã‚¹">
     
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMjUyNTI1Ii8+Cjx0ZXh0IHg9IjE2IiB5PSIyMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZmZmZiIgZm9udC1zaXplPSIxNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iYm9sZCI+TFQ8L3RleHQ+Cjwvc3ZnPgo=">
@@ -128,7 +128,7 @@
             transition: transform 0.1s ease;
         }
 
-        /* OCULTAR CONTENIDO ORIGINAL HASTA DESPUÉS DE LA INTRO */
+        /* OCULTAR CONTENIDO ORIGINAL HASTA DESPUÃ‰S DE LA INTRO */
         body.intro-active #wrapper {
             opacity: 0;
             pointer-events: none;
@@ -181,6 +181,7 @@
             letter-spacing: 1px !important;
         }
     </style>
+  <link rel="stylesheet" href="assets/ltsd-modals/ltsd-modals.css">
 </head>
 <body class="is-ready intro-active">
 
@@ -346,7 +347,7 @@
                     ECLIPSE HOUSE<br>Beverly Hills
                 </li>
                 <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./minamiaoyama-house/images/main.jpg" data-canvas-zoom="./minamiaoyama-house/images/main.jpg" data-canvas-url="project-template.html?project=minamiaoyama-house">
-                    SKYLINE TOWER<br>Urban Illumination — Miami
+                    SKYLINE TOWER<br>Urban Illumination â€” Miami
                 </li>
                 <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./nishiazabu-residence/images/main.jpg" data-canvas-zoom="./nishiazabu-residence/images/main.jpg" data-canvas-url="project-template.html?project=nishiazabu-residence">
                     LUNARIS STATE<br>Nocturnal Geometry
@@ -423,7 +424,7 @@
 
     <!-- SIMPLE TIMING LIKE BACKUP -->
     <script>
-        console.log('��️ Using working carousel timing from backup');
+        console.log('ï¿½ï¿½ï¸ Using working carousel timing from backup');
     </script>
 
     <!-- SCRIPTS ORIGINALES -->
@@ -432,7 +433,7 @@
 
     <!-- SCRIPT DE INTRO ANIMADA -->
     <script>
-        // CREAR PARTÍCULAS
+        // CREAR PARTÃCULAS
         function createParticles() {
             const particlesContainer = document.getElementById('particles');
             if (!particlesContainer) return;
@@ -451,14 +452,14 @@
             }
         }
 
-        // ANIMAR TEXTO LETRA POR LETRA CON EXPLOSIÓN
+        // ANIMAR TEXTO LETRA POR LETRA CON EXPLOSIÃ“N
         function animateIntroText() {
-            console.log('📝 Iniciando animación de texto intro');
+            console.log('ðŸ“ Iniciando animaciÃ³n de texto intro');
             const introText = document.querySelector('.intro-text');
             const text = 'LT STUDIO DESIGN';
 
             if (!introText) {
-                console.error('❌ No se encontró .intro-text');
+                console.error('âŒ No se encontrÃ³ .intro-text');
                 return;
             }
 
@@ -477,20 +478,20 @@
                 letters.push(span);
             });
 
-            console.log(`📝 Creadas ${letters.length} letras`);
+            console.log(`ðŸ“ Creadas ${letters.length} letras`);
 
             // Animar letra por letra
             letters.forEach((letter, index) => {
                 setTimeout(() => {
                     letter.style.color = '#ffffff';
                     letter.classList.add('filled');
-                    console.log(`📝 Letra ${index + 1} animada`);
+                    console.log(`ðŸ“ Letra ${index + 1} animada`);
 
-                    // Si es la última letra, hacer EXPLOSIÓN
+                    // Si es la Ãºltima letra, hacer EXPLOSIÃ“N
                     if (index === letters.length - 1) {
-                        console.log('🎯 Última letra completada, iniciando EXPLOSIÓN en 2 segundos');
+                        console.log('ðŸŽ¯ Ãšltima letra completada, iniciando EXPLOSIÃ“N en 2 segundos');
                         setTimeout(() => {
-                            console.log('💥 ¡EXPLOSIÓN MEGA ESPECTACULAR!');
+                            console.log('ðŸ’¥ Â¡EXPLOSIÃ“N MEGA ESPECTACULAR!');
 
                             // EXPLOTAR CADA LETRA
                             letters.forEach((letter, i) => {
@@ -513,7 +514,7 @@
 
                                         document.body.appendChild(flying);
 
-                                        // Animación de vuelo explosivo
+                                        // AnimaciÃ³n de vuelo explosivo
                                         const angle = (Math.PI * 2 * j / 5) + (Math.random() * 0.8);
                                         const distance = 400 + Math.random() * 600;
                                         const endX = rect.left + Math.cos(angle) * distance;
@@ -541,9 +542,9 @@
                                 }, i * 80);
                             });
 
-                            // Transición final después de la explosión
+                            // TransiciÃ³n final despuÃ©s de la explosiÃ³n
                             setTimeout(() => {
-                                console.log('🌟 Completando transición a página principal');
+                                console.log('ðŸŒŸ Completando transiciÃ³n a pÃ¡gina principal');
                                 const introScreen = document.getElementById('intro-screen');
                                 const body = document.body;
 
@@ -559,7 +560,7 @@
                                     body.classList.remove('intro-active');
                                     body.classList.add('intro-complete');
 
-                                    console.log('✅ Página original visible con todas sus animaciones');
+                                    console.log('âœ… PÃ¡gina original visible con todas sus animaciones');
                                 }, 1500);
                             }, 4000);
 
@@ -571,18 +572,18 @@
 
         // INICIALIZAR INTRO
         function initIntro() {
-            console.log('🚀 Inicializando intro animada');
+            console.log('ðŸš€ Inicializando intro animada');
 
             const introScreen = document.getElementById('intro-screen');
             if (introScreen) {
                 introScreen.style.display = 'flex';
                 introScreen.style.opacity = '1';
-                console.log('✅ Intro screen visible');
+                console.log('âœ… Intro screen visible');
 
-                // Crear partículas
+                // Crear partÃ­culas
                 createParticles();
 
-                // Iniciar animación después de 1 segundo
+                // Iniciar animaciÃ³n despuÃ©s de 1 segundo
                 setTimeout(() => {
                     animateIntroText();
                 }, 1000);
@@ -591,7 +592,7 @@
 
 
 
-        // Override de las URLs problemáticas para que funcionen los templates
+        // Override de las URLs problemÃ¡ticas para que funcionen los templates
         document.addEventListener('click', function(e) {
             const target = e.target.closest('.js-canvas__target');
             if (target && target.dataset.canvasUrl) {
@@ -605,13 +606,13 @@
 
 
 
-        // INICIAR CUANDO LA PÁGINA ESTÉ LISTA
+        // INICIAR CUANDO LA PÃGINA ESTÃ‰ LISTA
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('📱 DOM Content Loaded');
+            console.log('ðŸ“± DOM Content Loaded');
 
             // Check if we should skip intro (coming from projects)
             if (window.location.hash === '#skip-intro') {
-                console.log('🔄 Saltando intro, viniendo de proyecto');
+                console.log('ðŸ”„ Saltando intro, viniendo de proyecto');
 
                 // Hide intro screen immediately
                 const introScreen = document.getElementById('intro-screen');
@@ -635,7 +636,7 @@
         });
 
         if (document.readyState !== 'loading') {
-            console.log('⚡ DOM already loaded');
+            console.log('âš¡ DOM already loaded');
 
             if (window.location.hash === '#skip-intro') {
                 // Skip intro
@@ -649,7 +650,7 @@
             }
         }
 
-        console.log('🎉 LT STUDIO DESIGN con intro cargado');
+        console.log('ðŸŽ‰ LT STUDIO DESIGN con intro cargado');
 
         // Initialize custom cursor
         function initCustomCursor() {
@@ -754,12 +755,12 @@
                 try {
                     const response = await fetch(path);
                     if (response.ok) {
-                        console.log(`✅ Loaded circle config from ${path}`);
+                        console.log(`âœ… Loaded circle config from ${path}`);
                         return await response.json();
                     }
-                    console.log(`⚠️ Circle config not found at ${path} (status ${response.status})`);
+                    console.log(`âš ï¸ Circle config not found at ${path} (status ${response.status})`);
                 } catch (error) {
-                    console.log(`⚠️ Error loading circle config from ${path}`, error);
+                    console.log(`âš ï¸ Error loading circle config from ${path}`, error);
                 }
             }
 
@@ -851,7 +852,7 @@
                         target.dataset.canvasThumb = finalImage;
                         target.dataset.canvasZoom = finalImage;
 
-                        console.log(`🔄 Updated circle thumbnail for ${projectName}:`, finalImage);
+                        console.log(`ðŸ”„ Updated circle thumbnail for ${projectName}:`, finalImage);
 
                         const circleLayer = target.querySelector('.p-stage__circleThumb');
                         if (circleLayer) {
@@ -875,7 +876,7 @@
         }, 2000);
     </script>
 
-    <!-- SCRIPT PARA SINCRONIZAR IMÁGENES Y AJUSTAR TIMING -->
+    <!-- SCRIPT PARA SINCRONIZAR IMÃGENES Y AJUSTAR TIMING -->
     <script>
 
 
@@ -890,12 +891,12 @@
             const checkCarousel = setInterval(() => {
                 if (window.CAROUSEL_ALLOWED) {
                     clearInterval(checkCarousel);
-                    console.log('🎯 Carousel habilitado, verificando que empiece desde proyecto 1');
+                    console.log('ðŸŽ¯ Carousel habilitado, verificando que empiece desde proyecto 1');
 
-                    // Verificar después de un momento que esté en el proyecto correcto
+                    // Verificar despuÃ©s de un momento que estÃ© en el proyecto correcto
                     setTimeout(() => {
                         if (window.app && window.app.currentIndex !== 0) {
-                            console.log('���� Corrigiendo índice del carousel a proyecto 1');
+                            console.log('ï¿½ï¿½ï¿½ï¿½ Corrigiendo Ã­ndice del carousel a proyecto 1');
                             window.app.currentIndex = 0;
                             if (window.app.updateView) window.app.updateView();
                         }
@@ -926,5 +927,8 @@
             }
         }, 2000);
     </script>
+<script>window.LTSD_MODALS_CONFIG=window.LTSD_MODALS_CONFIG||{aboutTitle:"About LT Studio Design",aboutHtml:"<p>Tu texto</p>"};</script>
+<script src="assets/ltsd-modals/ltsd-modals.js"></script>
 </body>
 </html>
+
